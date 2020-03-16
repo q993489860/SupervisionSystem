@@ -1,0 +1,270 @@
+html{
+	width: 100%;
+	height: 100%;
+}
+body {
+	background: url(../img/login-background.jpg) no-repeat;
+	/*background-size: cover;*/
+	background-size: auto;
+	background-position: top center; 
+	font-size: 16px;
+	width: 100%;
+	margin: 0 auto;
+	max-width: 750px;
+	position: relative;
+}
+/*login.html*/
+.login ,
+.comment {
+	color: #fff;
+	height: auto;
+}
+.login .login-title {
+	margin-top: 120px;
+	color: #fff;
+}
+.login .login-title h1 {
+	font-weight: 700;
+	letter-spacing: 4px;
+}
+.login .page-header {
+    border-bottom: none;
+}
+.login form {
+	padding: 0 20px;
+}
+.login form .input-group {
+	padding: 20px 0;
+}
+.login form .input-group input {
+	height: 50px;
+}
+.radio-usertype {
+	font-size: 16px;
+}
+.lg-btn-box {
+	width: 100%;
+	text-align: center;
+}
+.com-lg-btn {
+	width: 80%;
+	margin-top: 2rem;
+}
+.lg-btn-box  .lg-btn {
+	width: 100%;
+	background-color: #f6e3ab;
+	color: #fff;
+	font-size: 20px;
+	letter-spacing: 10px;
+}
+@media only screen and (max-width:768px ) {
+/*	
+}
+@media only screen and (max-width: 320px) {*/
+	body{
+		font-size: 14px
+	}
+	.login-box {
+		margin-top: 0px;
+	}
+	.login form .input-group input {
+	    height: auto;
+	}
+	.login .login-title {
+	    margin-top: 30px;
+	}
+	.page-header {
+	    margin: 30px 0 20px;
+	}
+}
+/*query.html*/
+.top-back {
+	height: 32px;
+	line-height: 32px;
+	background-color: #f6e3ab;
+	opacity: .7;
+	position: relative;
+}
+.top-back i {
+	position: absolute;
+	font-size: 25px;
+	font-weight: 500;
+	margin: 0 10px;
+	color: #666;
+	top: 50%;
+	margin-top: -10px;
+}
+.top-back h1 {
+	text-align: center;
+}
+.query .container-fluid .row .col-md-12,
+.query .container-fluid .row .col-md-12 .col-xs-12 {
+	padding: 0;
+}
+.content {
+	width: 100%;
+	padding: 0;	
+	position: relative;
+}
+.zzsc-container .time-btn {
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	margin-top: 0;
+	padding-top: 0;
+	background-color: #48c5ff;
+}
+.zzsc-container .time-btn i {
+	margin-left: 15px;
+}
+.formbox {
+	width: 100%;
+	max-width: 750px;
+}
+.search-btn {
+	height: 25px;
+	line-height: 25px;
+	margin:auto 0;
+	padding: 0 12px;
+	color: #fff;
+	background-color: #48c5ff;
+}
+.zzsc-container {
+	margin: 20px 0;
+}
+.zzsc-container .col-md-6 {
+	padding-right: 0;
+}
+.content .zzsc-container .time-box {
+	display: none;
+}
+input#mydatepicker2,
+.key input.key-input {
+	width: 86px;
+	height: 22px;
+	font-size: 12px;
+    border: 1px solid #0088CC;
+   	margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+.key {
+	display: inline-block;
+}
+.key input.key-input {
+	width: 100px;
+}
+.table-container {
+	width: 100%;
+	padding: 10px 2px;
+}
+.table-container {
+	font-size: 14px;
+	padding-bottom: 100px;
+}
+.table-container .bs-example  th
+{
+	text-align: center;
+}
+.caozuo-btn {
+	background-color: #48c5ff;
+	padding: 0 2px;
+}
+.bs-example table thead tr th {
+	padding: 4px 0;
+}
+.footer {
+	width: 100%;
+	height: 100px;
+	bottom: 0;
+	overflow: hidden;
+	background-color: #f6e3ab;
+	opacity: .7;
+}
+@media only screen and (max-width: 320px) {
+	.table-container .table  {
+		font-size: 8px!important
+	}
+	.table-container .bs-example .table thead tr th,
+	.table-container tr
+	 {
+		text-align: center;
+	}
+}
+/*comment.html*/
+.comment .content {
+	margin: 80px auto;
+}
+.comment .content label {
+	color: #000;
+	font-size: 14px;
+	line-height: 36px;
+	color: #7a7a7a;
+	text-align: right;
+}
+.comment .content .form-horizontal .form-group {
+	padding: 0;
+	margin: 0;
+}
+.comment .content label.col-sm-2 ,
+.comment .content label.col-xs-2 {
+	padding: 0;
+}
+.score-tip {
+	margin:10px 15px;
+	border: 0;
+}
+.prompt .content .prompt-wrap {
+	padding: 100px 0 100px 0;
+	width: 100%;
+}
+.prompt .content .prompt-wrap button {
+	width: 100%;
+	padding: 10px;
+	margin: 20px auto;
+}
+.prompt-model-wrap {
+	padding: 40px 0;
+}
+.prompt-model-wrap img {
+	width: 100%;
+	height: 100%;
+}
+.prompt-model-wrap button.close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    
+}
+.prompt-model-wrap button.close span {	
+	color: #000000;
+	opacity: 1;
+	display: block;
+	width:40px;
+	height: 40px;
+	font-size: 40px;
+	border: 4px solid #000;
+    border-radius: 50%;
+}
+.prompt-model-wrap .modal-dialog {
+	margin: 80px 0;
+}
+@media only screen and (max-width:480px ) {
+	.prompt-model-wrap img {
+    	width: 100%;
+ 	   height: 100%;
+	}
+	.prompt .content .prompt-wrap button {
+		font-size: 14px
+	}
+	
+}
+@media only screen and (max-width: 370px) {
+	.comment .content label {
+	    font-size: 12px;
+	}
+}
+.btn-default:hover {
+    border-color: #fff;
+    
+}

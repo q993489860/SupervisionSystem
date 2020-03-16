@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<!--主页面-->
+	<definition name="default.main" template="/WEB-INF/views/layout/main.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/layout/header.jsp" />
+		<put-attribute name="left" value="/WEB-INF/views/layout/left.jsp" />
+		<put-attribute name="main" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
+	</definition>
+
+	<!--用户管理-->
+	<definition name="user.manager" extends="default.main">
+		<put-attribute name="title" value="用户管理"/>
+		<put-attribute name="main"  value="/WEB-INF/views/user/userManaging.jsp"/>
+	</definition>
+	<!--添加用户-->
+	<definition name="user.add" extends="default.main">
+		<put-attribute name="title" value="添加用户"/>
+		<put-attribute name="main"  value="/WEB-INF/views/user/userAdd.jsp"/>
+	</definition>
+	<!--更新用户-->
+	<definition name="user.update" extends="default.main">
+		<put-attribute name="title" value="更新用户"/>
+		<put-attribute name="main"  value="/WEB-INF/views/user/userUpdate.jsp"/>
+	</definition>
+	<!--用户信息详情-->
+	<definition name="user.detail" extends="default.main">
+		<put-attribute name="title" value="用户详情"/>
+		<put-attribute name="main"  value="/WEB-INF/views/user/userDetail.jsp"/>
+	</definition>
+	<!--选择课程-->
+	<definition name="courseComment.select" extends="default.main">
+		<put-attribute name="title" value="选择课程"/>
+		<put-attribute name="main"  value="/WEB-INF/views/course/courseSelect.jsp"/>
+	</definition>
+	<!--记录管理-->
+	<definition name="courseComment.write" extends="default.main">
+		<put-attribute name="title" value="填写记录"/>
+		<put-attribute name="main"  value="/WEB-INF/views/courseComment/courseCommentWrite.jsp"/>
+	</definition>
+	<!--记录详情-->
+	<definition name="courseComment.detail" extends="default.main">
+		<put-attribute name="title" value="填写记录"/>
+		<put-attribute name="main"  value="/WEB-INF/views/courseComment/courseCommentDetail.jsp"/>
+	</definition>
+	<!--编辑记录-->
+	<definition name="courseComment.edit" extends="default.main">
+		<put-attribute name="title" value="填写记录"/>
+		<put-attribute name="main"  value="/WEB-INF/views/courseComment/courseCommetnEdit.jsp"/>
+	</definition>
+	<!--审核中-->
+	<definition name="courseComment.checking" extends="default.main">
+		<put-attribute name="title" value="填写记录"/>
+		<put-attribute name="main"  value="/WEB-INF/views/courseComment/courseCommentChecking.jsp"/>
+	</definition>
+	<!--已审核-->
+	<definition name="courseComment.checked" extends="default.main">
+		<put-attribute name="title" value="填写记录"/>
+		<put-attribute name="main"  value="/WEB-INF/views/courseComment/courseCommentChecked.jsp"/>
+	</definition>
+	<!--未通过-->
+	<definition name="courseComment.unThrough" extends="default.main">
+		<put-attribute name="title" value="填写记录"/>
+		<put-attribute name="main"  value="/WEB-INF/views/courseComment/courseCommentUnThrough.jsp"/>
+	</definition>
+
+	<!-- =======(胡钢)==================================================================================== -->
+
+	<!-- 未审核记录 -->
+	<definition name="course.uncheckedPage" extends="default.main">
+		<put-attribute name="title" value="审核管理"/>
+		<put-attribute name="main"  value="/WEB-INF/views/courseRecord/courseRecordUnchecked.jsp"/>
+	</definition>
+
+	<!-- 已审核记录 -->
+	<definition name="course.checkedPage" extends="default.main">
+		<put-attribute name="title" value="审核管理"/>
+		<put-attribute name="main"  value="/WEB-INF/views/courseRecord/courseRecordChecked.jsp"/>
+	</definition>
+
+	<!-- 添加课程 -->
+	<definition name="course.addCourse" extends="default.main">
+		<put-attribute name="title" value="课程管理"/>
+		<put-attribute name="main"  value="/WEB-INF/views/course/courseAdd.jsp"/>
+	</definition>
+
+	<!-- 课程列表 -->
+	<definition name="course.courseListPage" extends="default.main">
+		<put-attribute name="title" value="课程管理"/>
+		<put-attribute name="main"  value="/WEB-INF/views/course/courseManaging.jsp"/>
+	</definition>
+	<!-- 更新课程 -->
+	<definition name="course.updateCoursePage" extends="default.main">
+		<put-attribute name="title" value="课程管理"/>
+		<put-attribute name="main"  value="/WEB-INF/views/course/courseUpdate.jsp"/>
+	</definition>
+
+	<!-- =======(宣洪剑)==================================================================================== -->
+
+	<!--任务管理-->
+	<definition name="task.manger" extends="default.main">
+		<put-attribute name="title" value="任务管理"/>
+		<put-attribute name="main"  value="/WEB-INF/views/task/taskManager.jsp"/>
+	</definition>
+	<!--在线分析-->
+	<definition name="data.analysis" extends="default.main">
+		<put-attribute name="title" value="数据分析"/>
+		<put-attribute name="main"  value="/WEB-INF/views/dataAnalysis/dataAnalysis.jsp"/>
+	</definition>
+	<!--========(罗坤)===========================================================================-->
+	<!--听课记录管理-->
+	<definition name="courseRecord.list" extends="default.main">
+		<put-attribute name="title" value="听课记录" />
+		<put-attribute name="main" value="/WEB-INF/views/courseRecord/courseRecordList.jsp" />
+	</definition>
+	<definition name="courseComment.list" extends="default.main">
+		<put-attribute name="title" value="听课详情" />
+		<put-attribute name="main" value="/WEB-INF/views/courseComment/courseCommentList.jsp" />
+	</definition>
+	<definition name="courseComment.details" extends="default.main">
+		<put-attribute name="title" value="记录详情" />
+		<put-attribute name="main" value="/WEB-INF/views/courseComment/courseCommentDetailes.jsp" />
+	</definition>
+</tiles-definitions>
